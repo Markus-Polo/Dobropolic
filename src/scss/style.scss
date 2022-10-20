@@ -1,0 +1,31 @@
+$sm-screen: 700px;
+$m_screen: 1000px;
+
+@mixin test {
+  @media screen and (min-width: $sm-screen) {
+    max-width: 670px;
+    @content;
+  }
+}
+@mixin test {
+  @media screen and (min-width: $m_screen) {
+    max-width: 970px;
+    @content;
+  }
+}
+@mixin text_standart {
+  color: aqua;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 300px;
+  @include text_standart;
+  @include test {
+    font-size: 100px;
+  }
+  @include test {
+    font-size: 150px;
+  }
+}
