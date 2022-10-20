@@ -63,5 +63,10 @@
   "lint-staged": {
     "*.{css,scss}": "stylelint --fix",
     "*.{html,js,scss,css,md}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
