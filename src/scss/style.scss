@@ -20,8 +20,8 @@ $m_screen: 1000px;
 }
 
 .container {
-  max-width: 300px;
   @include text_standart;
+  max-width: 300px;
   @include test {
     font-size: 100px;
   }
@@ -29,8 +29,7 @@ $m_screen: 1000px;
     font-size: 150px;
   }
 }
-
 .title {
-  padding-bottom: 0px;
-  padding-right: 0px;
+  padding-right: 0;
+  padding-bottom: 0;
 }
