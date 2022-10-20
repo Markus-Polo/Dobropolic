@@ -1,5 +1,5 @@
 $sm-screen: 700px;
-$m_screen: 1000px;
+$m-screen: 1000px;
 
 @mixin test {
   @media screen and (min-width: $sm-screen) {
@@ -7,20 +7,20 @@ $m_screen: 1000px;
     @content;
   }
 }
-@mixin test {
+@mixin test1 {
   @media screen and (min-width: $m_screen) {
     max-width: 970px;
     @content;
   }
 }
-@mixin text_standart {
+@mixin text-standart {
   color: aqua;
   font-size: 20px;
   font-weight: 700;
 }
 
 .container {
-  @include text_standart;
+  @include text-standart;
   max-width: 300px;
   @include test {
     font-size: 100px;
