@@ -1,3 +1,99 @@
-.header {
-  color: black;
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 74px;
+  padding-bottom: 700px;
+}
+.logo-short,
+.logo {
+  font-family: SpaceGrotesk, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.logo-short {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+.logo {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+.heder-nav-list {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    padding-left: 50px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 100px;
+  }
+}
+.heder-nav-linc {
+  &:hover {
+    color: $primary-color;
+  }
+}
+.contact-button-short {
+  padding: 6px 18px;
+  border-top: 3px solid $primary-color;
+  border-bottom: 3px solid $primary-color;
+  border-left: 3px solid $primary-color;
+  border-radius: 12px 0 0 12px;
+  color: $primary-color;
+  font-family: SpaceGrotesk, sans-serif;
+  font-size: 30px;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+.contact-button {
+  display: none;
+  position: relative;
+  padding: 6px 16px;
+  border-top: 3px solid $primary-color;
+  border-right: 3px solid $primary-color;
+  border-left: 3px solid $primary-color;
+  border-radius: 12px;
+  background: linear-gradient($primary-color, $primary-color),
+    linear-gradient($primary-color, $primary-color);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: 86px 3px, 8px 3px;
+  color: $primary-color;
+  font-size: 30px;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18%;
+    width: 1px;
+    height: 100%;
+    background: $primary-color;
+  }
+}
+.contact-button__icon {
+  padding-right: 34px;
+  font-family: SpaceGrotesk, sans-serif;
+}
+.contact-button__number {
+  font-size: 28px;
+  font-weight: 500;
+}
+.contact-button__info {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  width: 100%;
+  transform: translate(64%, 50%);
+  font-size: 13px;
 }
