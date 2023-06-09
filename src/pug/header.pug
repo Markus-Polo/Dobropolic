@@ -1,4 +1,24 @@
 header
-  h1
-    | HI
-  img(src='./img/about_1x.jpg' alt='')
+  .container
+    .header-wrapper
+      .d-flex
+        .logo-wrapper
+          a.logo-short(href="#") Dobropolic
+          a.logo(href="#") Dobropolic(land)
+        nav.heder-nav
+          ul.heder-nav-list
+            li.heder-nav-item
+              a.heder-nav-linc(href="") Про поліс
+            li.heder-nav-item
+              a.heder-nav-linc(href="") Для чого
+            li.heder-nav-item
+              a.heder-nav-linc(href="") Ціни
+            li.heder-nav-item
+              a.heder-nav-linc(href="") FAQ
+
+      .contact-wrapper
+        a.contact-button-short(href='tel:+384995833344') ?
+        a.contact-button(href='tel:+384995833344')
+          span.contact-button__icon ?
+          span.contact-button__number 499 583-33-44
+          spsn.contact-button__info Безкоштовна консультація 

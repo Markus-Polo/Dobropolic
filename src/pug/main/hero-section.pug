@@ -1,0 +1,18 @@
+section.hero-section
+  .container
+    h1.title-1 Ми поруч в екстрених ситуаціях!
+    p.hero-text Ваша страховка у випадках, коли потрібна негайна допомога.
+    .hero-button-holder
+      button.hero-button-primary(data-toggle='modal' data-target='#heroModal') Обрати поліс
+      button.hero-button-secondary(data-toggle='modal' data-target='#heroModal') замовити консультацію
+  .modal#heroModal
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h1.title-modal
+            | Задайте ваше питання
+          button.modal-close-btn(data-dismiss="close")
+        .modal-body
+        .modal-footer
+          button.modal-primary-btn
+            | Відправити
